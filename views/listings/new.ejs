@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>incogNex</title>
+   <style >
+     .new{
+        position: relative;
+        left: 700px;
+        top:230px;
+     }
+     .edit{
+         font-size:larger;
+     }
+     .edit2{
+        font-size: larger;
+     }
+     .edit3{
+        font-size: x-large;
+        color:white;
+        background-color: black;
+        border-color: none;
+        border-radius: 15px;
+
+     }
+   </style>
+  </head>
+  <body style="background-color: aquamarine;"  >
+    <div class="new"><h1>Create a New POST</h1>
+        <form class="edit"method="POST" action="/listings">
+          <input class="edit2" name="listing[title]" placeholder="enter title" type="text" required />
+          <br /><br />
+          <textarea
+           class="edit2"
+            name="listing[description]"
+            placeholder="enter description"
+            required
+          ></textarea>
+          <br /><br />
+          <input
+            class="edit2"
+            name="listing[image]"
+            placeholder="enter image URL/Link"
+            type="text"
+          />
+          <br /><br />
+          
+        
+        
+          
+          <button class="edit3 ">Add</button>
+        </form></div>
+    
+  </body>
+</html>
